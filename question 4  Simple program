@@ -1,0 +1,33 @@
+public class SimpleProgram {
+
+    private int number;
+
+    // Constructor
+    public SimpleProgram(int initialNumber) {
+        number = initialNumber;
+    }
+
+    // Non-static method
+    public void displayNumber() {
+        System.out.println("The current number is: " + number);
+    }
+
+    // Static method 1
+    public static void printHello() {
+        System.out.println("Hello from Simple Program!");
+    }
+
+    // Static method 2
+    public static void printGoodbye() {
+        System.out.println("Goodbye from Simple Program!");
+    }
+
+    public static void main(String[] args) {
+        printHello(); // Static method call
+
+        SimpleProgram program = new SimpleProgram(10); // Creating object with initial number 10
+        program.displayNumber(); // Displaying the number using non-static method
+
+        printGoodbye(); // Static method call
+    }
+}
